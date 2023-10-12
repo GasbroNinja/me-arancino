@@ -33,6 +33,7 @@
     font-size: 36px;
     font-weight: 400;
     color: #fca849;
+    
 }
 
 .myfont3:hover {
@@ -41,5 +42,34 @@
 }
 
 .offCanv{
-    background-color: #480b0b;
+    background-color: #833b3b;
+}
+
+ @keyframes image-in {
+     from {
+         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+     }
+
+     to {
+         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+     }
+ }
+
+img {
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+}
+
+ @keyframes outer-left {
+     from {
+         transform: translateY(-100%);
+     }
+
+     to {
+         transform: none;
+         animation: paused;
+     }
+ }
+
+.navAnimation{
+    animation: outer-left 2s 0s cubic-bezier(0.5, 0, 0.1, 1) ;
 }

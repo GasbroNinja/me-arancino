@@ -8,12 +8,16 @@ const MyNavbar = () => {
   return (
     <>
       {["lg"].map((expand) => (
-        <Navbar key={expand} expand={expand} className="m-0 p-1 mb-3 myfont">
+        <Navbar
+          key={expand}
+          expand={expand}
+          className="mx-2 px-3 rounded-2 mb-3 myfont offCanv navAnimation"
+        >
           <Container fluid className="myfont">
             <Navbar.Brand href="#">
-              <div className="border border-3 border-warning-subtle rounded-circle">
+              <div className="">
                 <img
-                  className="rounded-circle"
+                  className="rounded-2"
                   src={logo1}
                   alt="logo"
                   width={105}
@@ -29,7 +33,10 @@ const MyNavbar = () => {
               className="offCanv"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`} className='myfont'>
+                <Offcanvas.Title
+                  id={`offcanvasNavbarLabel-expand-${expand}`}
+                  className="myfont"
+                >
                   Ma n'Arancino
                 </Offcanvas.Title>
               </Offcanvas.Header>
@@ -44,7 +51,7 @@ const MyNavbar = () => {
                   <NavDropdown
                     title="Gallery"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className="myfont3s"
+                    className="myfont3"
                   >
                     <NavDropdown.Item href="#action3" className="myfont2">
                       Arancino

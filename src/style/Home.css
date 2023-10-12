@@ -28,8 +28,12 @@
      padding-bottom: 1vmin;
      height: 90vh;
      width: 100%;
-     background: #ede8e2;
-     color: #3a3535;
+     background-image: url("../assets/arancino-bg.png");
+     background-position: 150%;
+     background-size: cover;;
+     color: #fec36c;
+    text-shadow: 50px 5px 32px 0 #341701;
+     
  }
 
  body {
@@ -85,6 +89,7 @@
 
  .cafe,
  .mozart {
+        
      animation: outer-left 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
  }
 
@@ -115,8 +120,6 @@
  }
 
  .image {
-        background-position: 250%;
-            background-size: cover;
     height: 100%;
      display: block;
      flex-wrap: wrap;

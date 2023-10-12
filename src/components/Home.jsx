@@ -2,7 +2,7 @@ import React from 'react'
 import "../style/Home.css"
 import { Container } from 'react-bootstrap';
 import MyNavbar from './MyNavbar';
-import bg1 from "../assets/arancino-bg.png"
+
 
 const Home = () => {
   return (
@@ -25,7 +25,7 @@ const Home = () => {
             </div>
 
             <div className="image">
-              <img src={bg1} alt="background"   />
+            
             </div>
           </div>
         </Container>
