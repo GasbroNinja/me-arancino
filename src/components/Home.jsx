@@ -1,27 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import "../style/Home.css"
 import "../style/MyNavbar.css";
 import { Container } from 'react-bootstrap';
 import MyNavbar from './MyNavbar';
 import logo1 from "../assets/OrangeandYellowIllustrationThaiTeaLogo.png";
+import CaroselloArancino from './CaroselloArancino';
 
 const Home = () => {
-
-    const [show, setShow] = useState(true);
-    const controlNavbar = () => {
-      if (window.scrollY > 100) {
-        setShow(false);
-      } else {
-        setShow(true);
-      }
-    };
-
-    useEffect(() => {
-      window.addEventListener("scroll", controlNavbar);
-      return () => {
-        window.removeEventListener("scroll", controlNavbar);
-      };
-    }, []);
 
   return (
     <>
@@ -30,7 +15,7 @@ const Home = () => {
           <MyNavbar />
         </Container>
         <Container fluid className="m-0 p-0"></Container>
-        <Container fluid className="">
+        <Container id="action1" fluid className="">
           <div id="app">
             <div className="title">
               <div className="title-inner">
@@ -53,7 +38,9 @@ const Home = () => {
             </div>
           </div>
         </Container>
-        <Container fluid className=""></Container>
+        <Container fluid className="">
+          {/*<CaroselloArancino />*/}
+        </Container>
       </Container>
       <div>Home</div>
     </>

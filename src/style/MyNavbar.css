@@ -1,12 +1,7 @@
 .nav-on-scroll{
     position : fixed;
     top: 0;
-    opacity: 1;
     width: 98%;
-}
-
-.nav-on-scroll-1 {
-    opacity: 0.2;
 }
 
 .myfont{
