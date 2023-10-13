@@ -1,21 +1,28 @@
+.nav-on-scroll{
+    position : fixed;
+    top: 0;
+    opacity: 1;
+    width: 98%;
+}
+
+.nav-on-scroll-1 {
+    opacity: 0.2;
+}
+
 .myfont{
-    font-family: 'Palanquin', sans-serif;
     font-size: 36px;
     font-weight: 400;
     color: #ffd453;
-    animation: 1s ease-in 1s infinite
+    animation: 1s ease-in 0s;
 }
 
 .myfont:hover{
     font-weight: 700;
-    font-size: 50px;
-    letter-spacing: 1.5;
+    letter-spacing: 2.5;
     color: #da9b23;
-    animation: 1s
 }
 
 .myfont2 {
-    font-family: 'Palanquin', sans-serif;
     font-size: 24px;
     font-weight: 400;
     color: #fca849;
@@ -29,7 +36,6 @@
 }
 
 .myfont3 {
-    font-family: 'Palanquin', sans-serif;
     font-size: 36px;
     font-weight: 400;
     color: #fca849;
@@ -56,20 +62,6 @@
  }
 
 img {
-    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s;
 }
 
- @keyframes outer-left {
-     from {
-         transform: translateY(-100%);
-     }
-
-     to {
-         transform: none;
-         animation: paused;
-     }
- }
-
-.navAnimation{
-    animation: outer-left 2s 0s cubic-bezier(0.5, 0, 0.1, 1) ;
-}

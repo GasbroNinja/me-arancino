@@ -28,11 +28,13 @@
      padding-bottom: 1vmin;
      height: 90vh;
      width: 100%;
-     background-image: url("../assets/arancino-bg.png");
+     background-image: url("../assets/MessinadallaltoVideodiAndreaPeri.mp4");
      background-position: 150%;
      background-size: cover;;
      color: #fec36c;
-    text-shadow: 50px 5px 32px 0 #341701;
+     
+     animation: image-in 0.5s cubic-bezier(0.5, 0, 0.1, 1) 0s backwards;
+
      
  }
 
@@ -47,14 +49,17 @@
      padding-left: 1em;
      grid-column: -1;
      grid-row: 1;
-    font-family: 'Palanquin', sans-serif;
+     font-family: 'Palanquin', sans-serif;
      font-size: 6vw;
      width: 100%;
      z-index: 2;
+     -webkit-text-stroke: 1px #6c3600;
+    
  }
 
  .title>.title-inner {
      display: inline-block;
+     
  }
 
  @keyframes text-clip {
@@ -89,7 +94,7 @@
 
  .cafe,
  .mozart {
-        
+    text-shadow: 50px 50px 32px 0 #341701;
      animation: outer-left 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
  }
 
@@ -120,11 +125,12 @@
  }
 
  .image {
-    height: 100%;
-     display: block;
+     height: auto;
+     display: flex;
+     
      flex-wrap: wrap;
      margin: 0;
-     padding: 0 1rem;
+     padding-left: 5rem;
      opacity: 0.9;
      animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
  }
@@ -132,19 +138,18 @@
  @keyframes image-in {
      from {
          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+         transform: scale(1);
      }
 
      to {
          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+         transform: scale(1.2);
      }
  }
 
  .image img {
      display: block;
      max-width: 100%;
-     max-height: 100%;
+     max-height: auto;
  }
 
- body:active * {
-     animation: none !important;
- }
