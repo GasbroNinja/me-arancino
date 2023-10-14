@@ -7,17 +7,20 @@ import "../style/MyNavbar.css"
 const MyNavbar = () => {
 
   const [show, setShow] = useState(true)
-  const controlNavbar = ()=> {
+
+  const controlNavbar = () => {
+
     if(window.scrollY > 100){
       setShow(false)
     } else {
       setShow(true)
     }
+
   }
 
-  useEffect(()=> {
+  useEffect(() => {
     window.addEventListener('scroll', controlNavbar)
-    return ()=> {
+    return () => {
       window.removeEventListener('scroll', controlNavbar)
     }
   }, [])
@@ -28,12 +31,10 @@ const MyNavbar = () => {
         <Navbar
           key={expand}
           expand={expand}
-          className={`mx-2 px-3 rounded-2 mb-3 myfont offCanv nav-on-scroll ${
-            show && "nav-on-scroll-1"
-          }`}
-          data-aos="fade-down"
+          className={`mx-2 px-3 rounded-2 mb-3 myfont offCanv nav-settings ${show ? "nav-set-down" : "nav-set-up"}`}
+          /*data-aos="fade-down"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"
+          data-aos-duration="2000"*/
         >
           <Container fluid className="">
             <Navbar.Brand href="#">

@@ -41,6 +41,14 @@ const Home = () => {
         <Container fluid className="">
           {/*<CaroselloArancino />*/}
         </Container>
+
+        <Container>
+          <p className="p-text-animated">
+            Spice up your type with CSS
+            <span className="p-span-text-animated">Animated text fill</span>
+            &mdash; no JavaScript required &mdash;
+          </p>
+        </Container>
       </Container>
       <div>Home</div>
     </>

@@ -1,7 +1,30 @@
-.nav-on-scroll{
+.nav-settings{
     position : fixed;
+    right: 0;
+    left: 0;
     top: 0;
-    width: 98%;
+    animation: 1s linear transform;
+}
+
+.nav-set-down{
+    transform: translateY(0%);
+}
+
+.nav-set-up{
+    transform: translateY(-100%);
+}
+
+@keyframes fadeup {
+    0%{
+        
+    };
+    50%{
+
+    };
+    100%{
+
+    };
+    
 }
 
 .myfont{
