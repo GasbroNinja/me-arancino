@@ -41,7 +41,7 @@ const Home = () => {
               data-aos-easing="ease-in-sine"
               data-aos-duration="3000"
             >
-              <img src={logo1} alt="arancino1"  />
+              <img src={logo1} alt="arancino1" />
             </div>
           </div>
         </Container>
@@ -72,8 +72,11 @@ const Home = () => {
             </p>
           </div>
         </Container>
-        <Container fluid className="py-3">
-          <Row className="py-5 d-flex align-items-center justify-content-center">
+        <Container fluid className="p-3">
+          <Row
+            className="py-5 d-flex align-items-center justify-content-center"
+            id="ricette"
+          >
             <Col
               xs={12}
               sm={12}
@@ -260,16 +263,24 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <div className="p-text-animated py-5 mt-5">
-              <h2 className="text-center  p-span-text-animated">
+            <div
+              className="p-text-animated py-5 mt-5 border-0 display-6"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="2000"
+            >
+              <h2 className="text-center  p-span-text-animated border-0">
                 Buon appetito!
               </h2>
             </div>
           </Row>
-          <Container fluid className="m-0 d-flex flex-column align-items-center justify-content-center">
+          <Container
+            fluid
+            className="mb-3 d-flex flex-column align-items-center justify-content-center"
+          >
             <div className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center">
               <h2 className="text-center p-span-text-animated">
-                Sicily - Messina
+                Sicily Messina
               </h2>
             </div>
 
@@ -283,6 +294,13 @@ const Home = () => {
                 className="m-0 p-0 d-flex align-items-center justify-content-center border border-3 rounded-3 border-danger"
               />
             </div>
+          </Container>
+          <Container fluid className="m-0 p-0">
+            <div className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center">
+              <h2 className="text-center p-span-text-animated">Chi Siamo?</h2>
+              
+            </div>
+            
           </Container>
         </Container>
       </Container>

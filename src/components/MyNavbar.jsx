@@ -67,18 +67,18 @@ const MyNavbar = () => {
                   <Nav.Link href="#action1" className="myfont px-3">
                     Home
                   </Nav.Link>
-                  <Nav.Link href="#action2" className="myfont px-3">
+                  <Nav.Link href="#chisiamo" className="myfont px-3">
                     Chi siamo?
                   </Nav.Link>
-                  <Nav.Link href="#action3" className="myfont px-3">
+                  <Nav.Link href="#ricette" className="myfont px-3">
                     Ricette
                   </Nav.Link>
                   <NavDropdown
                     title="Gallery"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className="myfont3 bg-secondary rounded-pill px-2"
+                    className="myfont3 bg-warning rounded-pill px-2 border border-3 border-danger"
                   >
-                    <NavDropdown.Item href="#action4" className="myfont2">
+                    <NavDropdown.Item href="#arancino" className="myfont2">
                       Arancino
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action5" className="myfont2">
