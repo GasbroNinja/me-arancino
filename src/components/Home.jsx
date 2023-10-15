@@ -83,6 +83,7 @@ const Home = () => {
                 >
                   <img src={ricetta2img} alt="arancinorecipes" fluid className='img-sizing' />
                 </div>
+                {/*change size img*/}
               </Col>
             </Col>
           </Row>
