@@ -1,5 +1,5 @@
 .nav-settings{
-    position : fixed;
+    
     right: 0;
     left: 0;
     top: 0;
@@ -8,10 +8,12 @@
 
 .nav-set-down{
     transform: translateY(0%);
+    transition: 1s;
 }
 
 .nav-set-up{
     transform: translateY(-100%);
+    transition: 1s
 }
 
 @keyframes fadeup {

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import "../App.css"
 import { Container, Nav, NavDropdown, Navbar, Offcanvas } from 'react-bootstrap';
-import logo1 from "../assets/OrangeandYellowIllustrationThaiTeaLogo.png";
+import logo1 from "../assets/LogoTrasparent.png";
 import "../style/MyNavbar.css"
 
 const MyNavbar = () => {
