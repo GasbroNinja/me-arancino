@@ -36,12 +36,12 @@ const Home = () => {
             </div>
 
             <div
-              className="image"
+              className="image d-flex align-items-center justify-content-center"
               data-aos="zoom-in"
               data-aos-easing="ease-in-sine"
               data-aos-duration="3000"
             >
-              <img src={logo1} alt="arancino1" />
+              <img src={logo1} alt="arancino1"  />
             </div>
           </div>
         </Container>
@@ -84,7 +84,7 @@ const Home = () => {
               className="d-flex align-items-center justify-content-center"
             >
               <div
-                className="image"
+                className="image d-flex align-items-center justify-content-center"
                 data-aos="fade-up-right"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="3000"
@@ -266,9 +266,9 @@ const Home = () => {
               </h2>
             </div>
           </Row>
-          <Container fluid className="m-0 ">
-            <div className="p-text-animated py-5 mt-5 d-flex justify-content-center align-items-center">
-              <h2 className="text-center  p-span-text-animated">
+          <Container fluid className="m-0 d-flex flex-column align-items-center justify-content-center">
+            <div className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center">
+              <h2 className="text-center p-span-text-animated">
                 Sicily - Messina
               </h2>
             </div>
