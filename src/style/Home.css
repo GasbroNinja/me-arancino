@@ -130,7 +130,7 @@
      
      flex-wrap: wrap;
      margin: 0;
-     padding-left: 5rem;
+     padding-bottom: 1rem;
      opacity: 0.9;
      animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
  }
@@ -183,10 +183,10 @@
     background-clip: text;
     /* Animate Background Image */
     -webkit-text-fill-color: transparent;
-    -webkit-animation: aitf 80s linear infinite;
+    animation: aitf 80s linear infinite;
     /* Activate hardware acceleration for smoother animations */
-    -webkit-transform: translate3d(0, 0, 0);
-    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
 }
 
 /* Animate Background Image */
@@ -201,6 +201,15 @@
 }
 
 .img-sizing{
-    width: 100%;
+    max-width: 100%;
 }
 
+.font-recip{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-style: normal;
+    text-transform: none;
+    background-attachment: scroll local;
+    background-image: url(../assets/ArancinoFlliGangiBronte.jpg);
+}
