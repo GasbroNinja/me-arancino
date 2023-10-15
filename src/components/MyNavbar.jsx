@@ -31,10 +31,9 @@ const MyNavbar = () => {
         <Navbar
           key={expand}
           expand={expand}
-          className={`mx-2 px-3 rounded-2 mb-3 myfont offCanv nav-settings ${show ? "nav-set-down" : "nav-set-up"}`}
-          /*data-aos="fade-down"
-          data-aos-easing="ease-in-sine"
-          data-aos-duration="2000"*/
+          className={`mx-2 px-3 rounded-2 mb-3 myfont offCanv nav-settings ${
+            show ? "nav-set-down" : "nav-set-up"
+          }`}
         >
           <Container fluid className="">
             <Navbar.Brand href="#">
@@ -71,7 +70,7 @@ const MyNavbar = () => {
                   <Nav.Link href="#action2" className="myfont px-3">
                     Chi siamo?
                   </Nav.Link>
-                  <Nav.Link href="#action1" className="myfont px-3">
+                  <Nav.Link href="#action3" className="myfont px-3">
                     Ricette
                   </Nav.Link>
                   <NavDropdown
@@ -79,14 +78,14 @@ const MyNavbar = () => {
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     className="myfont3 bg-secondary rounded-pill px-2"
                   >
-                    <NavDropdown.Item href="#action3" className="myfont2">
+                    <NavDropdown.Item href="#action4" className="myfont2">
                       Arancino
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="#action4" className="myfont2">
+                    <NavDropdown.Item href="#action5" className="myfont2">
                       Dove?
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5" className="myfont2">
+                    <NavDropdown.Item href="#action6" className="myfont2">
                       Stretto
                     </NavDropdown.Item>
                   </NavDropdown>

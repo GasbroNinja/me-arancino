@@ -210,6 +210,16 @@
     font-size: 20px;
     font-style: normal;
     text-transform: none;
-    background-attachment: scroll local;
-    background-image: url(../assets/ArancinoFlliGangiBronte.jpg);
+    letter-spacing: 0.8;
+    width: 100%;
+}
+
+.video-settings{
+    max-width: auto;
+}
+
+@media screen and (max-width: 600px) {
+    div.example {
+        font-size: 30px;
+    }
 }

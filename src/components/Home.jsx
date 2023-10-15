@@ -7,7 +7,7 @@ import logo1 from "../assets/OrangeandYellowIllustrationThaiTeaLogo.png";
 import CaroselloArancino from './CaroselloArancino';
 import ricetta1img from "../assets/arancino-bg.png";
 import ricetta2img from "../assets/img_6103-800x500.jpg";
-
+import video1 from "../assets/MessinadallaltoVideodiAndreaPeri.mp4"
 
 const Home = () => {
 
@@ -17,7 +17,7 @@ const Home = () => {
         <Container fluid className="m-0 p-0">
           <MyNavbar />
         </Container>
-        <Container fluid className="m-0 p-0"></Container>
+
         <Container
           id="action1"
           fluid
@@ -56,8 +56,13 @@ const Home = () => {
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
         >
-          <div className=" m-5 d-flex flex-wrap flex-column">
-            <p className="p-text-animated text-white fw-semibold text-center d-flex align-items-center">
+          <div
+            className=" m-5 d-flex flex-wrap flex-column"
+            data-aos="zoom-up"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="3000"
+          >
+            <p className="p-text-animated text-white fw-semibold text-center d-flex align-items-center flex-column">
               Ma n'Arancino? Italian Food P*orn
               <div className="d-flex flex-column">
                 <span className="p-span-text-animated text-center">
@@ -73,7 +78,7 @@ const Home = () => {
               xs={12}
               sm={12}
               md={12}
-              lg={6}
+              lg={12}
               xl={6}
               xxl={6}
               className="d-flex align-items-center justify-content-center"
@@ -89,7 +94,7 @@ const Home = () => {
                   alt="arancinorecipes"
                   className="img-sizing pb-3"
                 />
-                <div className="d-flex justify-content-center flex-column text-white p-text-animated">
+                <div className="d-flex justify-content-center text-center align-items-center flex-column text-white p-text-animated flex-wrap ">
                   <h4 className="py-2 fw-bold">
                     Arancino: una delizia croccante e succulenta al ragù 🍊
                   </h4>
@@ -126,10 +131,13 @@ const Home = () => {
               xs={12}
               sm={12}
               md={12}
-              lg={6}
+              lg={12}
               xl={6}
               xxl={6}
-              className="d-flex align-items-center justify-content-center"
+              className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-5"
+              data-aos="fade-up-left"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="3000"
             >
               <div
                 className="image"
@@ -145,30 +153,27 @@ const Home = () => {
                 />
               </div>
               {/*change size img*/}
-              <div className="d-flex justify-content-center flex-column text-white p-text-animated">
-                <h4 className="py-2 fw-bold">
+              <div className="d-flex justify-content-center flex-column text-white p-text-animated font-recip">
+                <h4 className="py-2 fw-bold text-uppercase">
                   Gli arancini al pistacchio messinesi sono una prelibatezza
                   della cucina Messinese, caratterizzati dalla presenza del
                   pistacchio 💚
                 </h4>
-                <p className="font-recip">
+                <div className="">
                   Ecco una descrizione della ricetta per preparare gli arancini
                   al pistacchio messinesi: <p>Ingredienti:</p>
-                  <ol className='py-2'>
+                  <ol className="py-2 px-0 font-recip">
                     <li>
-                       Risotto: 300g di riso per risotti (come Arborio o
+                      Risotto: 300g di riso per risotti (come Arborio o
                       Carnaroli)
                     </li>
                     <li>
-                       Pistacchi: 100g di pistacchi sgusciati e tritati
-                      finemente
+                      Pistacchi: 100g di pistacchi sgusciati e tritati finemente
                     </li>
+                    <li>Brodo vegetale: circa 1,2 litri di brodo vegetale </li>
                     <li>
-                       Brodo vegetale: circa 1,2 litri di brodo vegetale{" "}
-                    </li>
-                    <li>
-                       Formaggio: 100g di formaggio grattugiato (come pecorino
-                      o parmigiano)
+                      Formaggio: 100g di formaggio grattugiato (come pecorino o
+                      parmigiano)
                     </li>
                     <li> Burro: 50g di burro </li>
                     <li> Zafferano: un pizzico di zafferano in polvere </li>
@@ -179,40 +184,106 @@ const Home = () => {
                     <li>Pangrattato: q.b. per la panatura </li>
                     <li>Sale e pepe: q.b. per regolare il gusto</li>
                     <li>
-                      Carne (opzionale): ragù di carne, mozzarella o prosciutto cotto per il ripieno (a piacere)
+                      Carne (opzionale): ragù di carne, mozzarella o prosciutto
+                      cotto per il ripieno (a piacere)
                     </li>
                   </ol>
-                  <p>Procedimento:</p>
-                  1. **Preparazione del risotto:** a. In una pentola,
-                  soffriggere la cipolla con un po' di olio extravergine
-                  d'oliva. b. Aggiungere il riso e tostarlo per qualche minuto,
-                  quindi sfumare con il vino bianco fino a evaporazione. c.
-                  Aggiungere il brodo vegetale poco per volta, mescolando di
-                  tanto in tanto e attendendo che il riso assorba il brodo prima
-                  di aggiungerne altro. d. Aggiungere lo zafferano, il burro, il
-                  formaggio grattugiato e i pistacchi tritati. Continuare a
-                  mescolare fino a ottenere una consistenza cremosa. Regolare di
-                  sale e pepe secondo il gusto. 2. **Raffreddamento e
-                  formazione:** a. Trasferire il risotto in un contenitore e
-                  lasciarlo raffreddare completamente in frigorifero
-                  (preferibilmente per diverse ore o durante la notte). Questo
-                  renderà il risotto più facile da lavorare. 3.**Creazione degli
-                  arancini:** a. Prendere una porzione di risotto raffreddato e
-                  appiattirlo sulla mano. b. Aggiungere un po' di carne,
-                  mozzarella o prosciutto cotto al centro (se desiderato). c.
-                  Chiudere il risotto intorno al ripieno, formando una palla
-                  rotonda. 4. **Panatura e frittura:** a. Passare gli arancini
-                  prima nell'uovo sbattuto e poi nel pangrattato, assicurandosi
-                  che siano ben coperti. b. Friggere gli arancini in abbondante
-                  olio caldo fino a quando sono dorati e croccanti. 5.
-                  **Servire:** a. Scolare gli arancini su carta assorbente per
-                  eliminare l'eccesso di olio. b. Servire gli arancini al
-                  pistacchio messinesi caldi, magari accompagnati da una salsa
-                  di pomodoro o semplicemente da soli. Buon appetito!
-                </p>
+                  <h5>Procedimento:</h5>
+                  <p>Preparazione del risotto:</p>
+                  <ol>
+                    <li>
+                      {" "}
+                      In una pentola, soffriggere la cipolla con un po' di olio
+                      extravergine d'oliva.
+                    </li>
+                    <li>
+                      Aggiungere il riso e tostarlo per qualche minuto, quindi
+                      sfumare con il vino bianco fino a evaporazione.
+                    </li>
+                    <li>
+                      {" "}
+                      Aggiungere il brodo vegetale poco per volta, mescolando di
+                      tanto in tanto e attendendo che il riso assorba il brodo
+                      prima di aggiungerne altro.{" "}
+                    </li>
+                    <li>
+                      Aggiungere lo zafferano, il burro, il formaggio
+                      grattugiato e i pistacchi tritati. Continuare a mescolare
+                      fino a ottenere una consistenza cremosa. Regolare di sale
+                      e pepe secondo il gusto.{" "}
+                    </li>
+                  </ol>
+                  <p>
+                    Raffreddamento e formazione: Trasferire il risotto in un
+                    contenitore e lasciarlo raffreddare completamente in
+                    frigorifero (preferibilmente per diverse ore o durante la
+                    notte). Questo renderà il risotto più facile da lavorare.
+                  </p>
+                  <p>Creazione degli arancini:</p>
+                  <ol>
+                    <li>
+                      Prendere una porzione di risotto raffreddato e appiattirlo
+                      sulla mano.
+                    </li>
+                    <li>
+                      Aggiungere un po' di carne, mozzarella o prosciutto cotto
+                      al centro (se desiderato).{" "}
+                    </li>
+                    <li>
+                      Chiudere il risotto intorno al ripieno, formando una palla
+                      rotonda.{" "}
+                    </li>
+                  </ol>
+                  <p>Panatura e frittura:</p>
+                  <ol>
+                    <li>
+                      Passare gli arancini prima nell'uovo sbattuto e poi nel
+                      pangrattato, assicurandosi che siano ben coperti.{" "}
+                    </li>
+                    <li>
+                      Friggere gli arancini in abbondante olio caldo fino a
+                      quando sono dorati e croccanti.
+                    </li>
+                  </ol>
+                  <p>Servire:</p>
+                  <ol>
+                    <li>
+                      Scolare gli arancini su carta assorbente per eliminare
+                      l'eccesso di olio.{" "}
+                    </li>
+                    <li>
+                      Servire gli arancini al pistacchio messinesi caldi, magari
+                      accompagnati da una salsa di pomodoro o semplicemente da
+                      soli.
+                    </li>
+                  </ol>
+                </div>
               </div>
             </Col>
+            <div className="p-text-animated py-5 mt-5">
+              <h2 className="text-center  p-span-text-animated">
+                Buon appetito!
+              </h2>
+            </div>
           </Row>
+          <Container fluid className="m-0 ">
+            <div className="p-text-animated py-5 mt-5 d-flex justify-content-center align-items-center">
+              <h2 className="text-center  p-span-text-animated">
+                Sicily - Messina
+              </h2>
+            </div>
+
+            <div className="m-0 p-0 d-flex align-items-center justify-content-center">
+              <video
+                src={video1}
+                autoPlay={true}
+                muted
+                loop
+                controls
+                className="m-0 p-0 d-flex align-items-center justify-content-center border border-3 rounded-3 border-danger"
+              />
+            </div>
+          </Container>
         </Container>
       </Container>
     </>
