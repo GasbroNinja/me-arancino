@@ -76,7 +76,7 @@ const MyNavbar = () => {
                   <NavDropdown
                     title="Gallery"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    className="myfont3 bg-warning rounded-pill px-2 border border-3 border-danger"
+                    className="myfont3 px-2"
                   >
                     <NavDropdown.Item href="#gallery" className="myfont2">
                       Arancino

@@ -1,6 +1,7 @@
  * {
      position: relative;
      box-sizing: border-box;
+     
  }
 
  .iframely-embed {
@@ -39,7 +40,7 @@
  }
 
  body {
-     display: grid;
+     
      padding: 1vmin;
      background: #3a0f1c;
 
@@ -209,8 +210,8 @@
     font-weight: 400;
     font-size: 20px;
     font-style: normal;
-    
-    letter-spacing: 0.8;
+    text-transform: none;
+    letter-spacing: 1p;
     width: 100%;
 }
 

@@ -95,7 +95,7 @@ const Home = () => {
             >
               <div
                 className="image d-flex align-items-center justify-content-center"
-                data-aos="fade-up-right"
+                data-aos="fade-up"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="3000"
               >
@@ -104,35 +104,74 @@ const Home = () => {
                   alt="arancinorecipes"
                   className="img-sizing pb-3"
                 />
-                <div className="d-flex justify-content-center text-center align-items-center flex-column text-white p-text-animated flex-wrap ">
-                  <h4 className="py-2 fw-bold">
+                <div className="d-flex justify-content-center text-start align-items-center flex-column text-white p-text-animated flex-wrap ">
+                  <h4 className="py-2 fw-bold text-center">
                     Arancino: una delizia croccante e succulenta al ragù 🍊
                   </h4>
-                  <p className="font-recip">
-                    Immagina un guscio croccante che racchiude un cuore morbido
-                    e gustoso. L'arancino è proprio così: un mix perfetto di
-                    riso, ragù, formaggio e tanto amore per la cucina italiana.
-                    Ingredienti: Riso Carnaroli: 300g Ragù di carne: 200g
-                    Mozzarella: 150g Piselli: 100g Formaggio grattugiato: 50g
-                    Uovo: 1 Pangrattato: quanto basta Olio per friggere: quanto
-                    basta Sale e pepe: a piacere Procedimento: Cuoci il riso
-                    Carnaroli e lascialo raffreddare. Mescola il riso con il
-                    ragù, i piselli, il formaggio grattugiato e l'uovo. Aggiusta
-                    di sale e pepe. Prendi una porzione di composto di riso,
-                    forma una palla e inserisci al centro un cubetto di
-                    mozzarella. Passa l'arancino nel pangrattato, assicurandoti
-                    che sia ben ricoperto. Friggi gli arancini in abbondante
-                    olio caldo fino a quando saranno dorati e croccanti. Scola
-                    gli arancini su carta assorbente per eliminare l'olio in
-                    eccesso. 🎉 Gusta e condividi l'autentico sapore siciliano
-                    🎉 L'arancino è pronto per essere gustato caldo, magari
-                    accompagnato da una fresca bevanda estiva. Invita gli amici
-                    e la famiglia a condividere questo piatto tradizionale
-                    italiano, fatto con amore e passione, e lasciati conquistare
-                    dal suo sapore unico e avvolgente. Vieni a scoprire il
-                    piacere autentico dell'arancino e deliziati con questa
-                    prelibatezza siciliana! Buon appetito
-                  </p>
+                  <div className="font-recip">
+                    <p className="font-recip">
+                      Immagina un guscio croccante che racchiude un cuore
+                      morbido e gustoso. L'arancino è proprio così: un mix
+                      perfetto di riso, ragù, formaggio e tanto amore per la
+                      cucina italiana.
+                    </p>
+                    <br />
+                    <p className="my-font-home mt-3 text-center">
+                      Ingredienti:
+                    </p>
+                    <ul>
+                      <li>Riso Carnaroli: 300g </li>
+                      <li>Ragù di carne: 200g </li>
+                      <li>Mozzarella: 150g </li>
+                      <li>Piselli: 100g </li>
+                      <li>Formaggio grattugiato: 50g </li>
+                      <li>Uovo: 1 </li>
+                      <li>
+                        Pangrattato: quanto basta Olio per friggere: quanto
+                        basta
+                      </li>
+                      <li>Sale e pepe: a piacere </li>
+                    </ul>
+                    <ol>
+                      <p className="my-font-home mt-3 text-center">
+                        Procedimento:
+                      </p>
+                      <li>Cuoci il riso Carnaroli e lascialo raffreddare.</li>
+                      <li>
+                        {" "}
+                        Mescola il riso con il ragù, i piselli, il formaggio
+                        grattugiato e l'uovo.{" "}
+                      </li>
+                      <li>Aggiusta di sale e pepe.</li>
+                      <li>
+                        {" "}
+                        Prendi una porzione di composto di riso, forma una palla
+                        e inserisci al centro un cubetto di mozzarella.
+                      </li>
+                      <li>
+                        Passa l'arancino nel pangrattato, assicurandoti che sia
+                        ben ricoperto.{" "}
+                      </li>
+                      <li>
+                        Friggi gli arancini in abbondante olio caldo fino a
+                        quando saranno dorati e croccanti.{" "}
+                      </li>
+                      <li>
+                        Scola gli arancini su carta assorbente per eliminare
+                        l'olio in eccesso.
+                      </li>
+                    </ol>
+                    <p className="my-font-home mt-3 text-start">
+                      🎉 Gusta e condividi l'autentico sapore siciliano 🎉
+                      L'arancino è pronto per essere gustato caldo, magari
+                      accompagnato da una fresca bevanda estiva. Invita gli
+                      amici e la famiglia a condividere questo piatto
+                      tradizionale italiano, fatto con amore e passione, e
+                      lasciati conquistare dal suo sapore unico e avvolgente.
+                      Vieni a scoprire il piacere autentico dell'arancino e
+                      deliziati con questa prelibatezza siciliana! Buon appetito
+                    </p>
+                  </div>
                 </div>
               </div>
             </Col>
@@ -145,13 +184,13 @@ const Home = () => {
               xl={6}
               xxl={6}
               className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-5"
-              data-aos="fade-up-left"
+              data-aos="fade-up"
               data-aos-easing="ease-in-sine"
               data-aos-duration="3000"
             >
               <div
                 className="image img-sizing"
-                data-aos="fade-up-left"
+                data-aos="fade-up"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="3000"
               >
@@ -162,15 +201,16 @@ const Home = () => {
                 />
               </div>
               {/*change size img*/}
-              <div className="d-flex justify-content-center flex-column text-white p-text-animated font-recip">
-                <h4 className="py-2 fw-bold text-uppercase">
+              <div className="d-flex justify-content-center text-start flex-column text-white p-text-animated font-recip">
+                <h4 className="py-2 fw-bold text-uppercase text-center">
                   Gli arancini al pistacchio messinesi sono una prelibatezza
                   della cucina Messinese, caratterizzati dalla presenza del
                   pistacchio 💚
                 </h4>
                 <div className="font-recip">
                   Ecco una descrizione della ricetta per preparare gli arancini
-                  al pistacchio messinesi: <p>Ingredienti:</p>
+                  al pistacchio messinesi:{" "}
+                  <p className="my-font-home pt-3 text-center">Ingredienti:</p>
                   <ol className="py-2 px-0 font-recip">
                     <li>
                       Risotto: 300g di riso per risotti (come Arborio o
@@ -197,8 +237,12 @@ const Home = () => {
                       cotto per il ripieno (a piacere)
                     </li>
                   </ol>
-                  <h5>Procedimento:</h5>
-                  <p>Preparazione del risotto:</p>
+                  <h5 className="my-font-home mb-3 text-center">
+                    Procedimento:
+                  </h5>
+                  <p className="fs-5 my-font-home text-center">
+                    Preparazione del risotto:
+                  </p>
                   <ol className="font-recip">
                     <li>
                       {" "}
@@ -222,13 +266,18 @@ const Home = () => {
                       e pepe secondo il gusto.{" "}
                     </li>
                   </ol>
-                  <p>
-                    Raffreddamento e formazione: Trasferire il risotto in un
-                    contenitore e lasciarlo raffreddare completamente in
-                    frigorifero (preferibilmente per diverse ore o durante la
-                    notte). Questo renderà il risotto più facile da lavorare.
+                  <p className="my-font-home mb-3 text-center">
+                    Raffreddamento e formazione:{" "}
                   </p>
-                  <p>Creazione degli arancini:</p>
+                  <p>
+                    Trasferire il risotto in un contenitore e lasciarlo
+                    raffreddare completamente in frigorifero (preferibilmente
+                    per diverse ore o durante la notte). Questo renderà il
+                    risotto più facile da lavorare.
+                  </p>
+                  <p className="my-font-home text-center">
+                    Creazione degli arancini:
+                  </p>
                   <ol className="font-recip">
                     <li>
                       Prendere una porzione di risotto raffreddato e appiattirlo
@@ -243,7 +292,9 @@ const Home = () => {
                       rotonda.{" "}
                     </li>
                   </ol>
-                  <p>Panatura e frittura:</p>
+                  <p className="my-font-home text-center">
+                    Panatura e frittura:
+                  </p>
                   <ol className="font-recip">
                     <li>
                       Passare gli arancini prima nell'uovo sbattuto e poi nel
@@ -254,7 +305,7 @@ const Home = () => {
                       quando sono dorati e croccanti.
                     </li>
                   </ol>
-                  <p>Servire:</p>
+                  <p className="my-font-home text-center">Servire:</p>
                   <ol className="font-recip">
                     <li>
                       Scolare gli arancini su carta assorbente per eliminare
@@ -270,14 +321,14 @@ const Home = () => {
               </div>
             </Col>
             <div
-              className="p-text-animated py-5 mt-5 border-0 display-6"
+              className="p-text-animated py-5 mt-5 border-0 "
               data-aos="fade-up"
               data-aos-easing="ease-in-sine"
               data-aos-duration="2000"
             >
-              <h2 className="text-center  p-span-text-animated border-0">
+              <h4 className="text-center  p-span-text-animated border-0">
                 Buon appetito!
-              </h2>
+              </h4>
             </div>
           </Row>
           <Container
@@ -339,7 +390,7 @@ const Home = () => {
                 data-aos-duration="3000"
               >
                 <div className="d-flex justify-content-center flex-column text-white p-text-animated font-recip border-0">
-                  <h4 className="py-4 fw-bold text-uppercase d-flex justify-content-center flex-column text-white p-text-animated font-recip">
+                  <h4 className="my-font-home py-4 fw-bold text-uppercase d-flex justify-content-center flex-column text-white p-text-animated font-recip">
                     Esperienza Gustosa della Sicilia: <br /> 🌟
                     <br /> I Nostri Arancini
                   </h4>
@@ -442,7 +493,10 @@ const Home = () => {
           <Footer />
         </Container>
 
-        <Container fluid className="mx-5 p-0 d-flex align-items-center justify-content-center">
+        <Container
+          fluid
+          className="mx-5 p-0 d-flex align-items-center justify-content-center"
+        >
           <a
             href="#top"
             className="my-font-home text-decoration-none text-decoration-none text-danger bg-warning rounded-pill border border-5 border-dark px-3 mx-3 mt-3"
