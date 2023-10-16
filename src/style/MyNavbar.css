@@ -33,7 +33,7 @@
     font-size: 36px;
     font-weight: 400;
     color: #ffd453;
-    animation: 1s ease-in 0s;
+    transition: 1s ease-in 0s;
 }
 
 .myfont:hover{
@@ -52,7 +52,7 @@
     font-weight: 700;
     color: #da6623;
     letter-spacing: 1.5;
-    animation: 1s
+    transition: 1s
 }
 
 .myfont3 {

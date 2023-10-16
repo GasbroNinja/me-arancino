@@ -245,7 +245,22 @@
 .carousel-img{
     margin: auto;
     max-width: 1400px;
+    max-height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.my-font-home {
+    font-size: 36px;
+    font-weight: 700;
+    font-style: italic;
+    font-family: 'Palanquin', sans-serif;
+    color: #ffd453;
+    transition: 1s ease-in 0s;
+}
+
+.my-font-home:hover{
+    letter-spacing: 1.5px;
+    transition: 1s;
 }

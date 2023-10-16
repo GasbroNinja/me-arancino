@@ -78,14 +78,13 @@ const MyNavbar = () => {
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                     className="myfont3 bg-warning rounded-pill px-2 border border-3 border-danger"
                   >
-                    <NavDropdown.Item href="#arancino" className="myfont2">
+                    <NavDropdown.Item href="#gallery" className="myfont2">
                       Arancino
                     </NavDropdown.Item>
                     <NavDropdown.Item href="#action5" className="myfont2">
                       Dove?
                     </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action6" className="myfont2">
+                    <NavDropdown.Item href="#messina" className="myfont2">
                       Stretto
                     </NavDropdown.Item>
                   </NavDropdown>

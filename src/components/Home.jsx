@@ -2,8 +2,8 @@ import React from 'react'
 import "../style/Home.css"
 import "../style/MyNavbar.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
-import AwesomeSlider from "react-awesome-slider";
-import withAutoplay from "react-awesome-slider/dist/autoplay";
+//import AwesomeSlider from "react-awesome-slider";
+//import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import MyNavbar from './MyNavbar';
@@ -16,13 +16,14 @@ import arancinogal1 from "../assets/ricetta-arancini.jpg";
 import arancinogal2 from "../assets/ArancinoFlliGangiBronte.jpg";
 import arancinogal3 from "../assets/ZagaraBrolo08.jpg";
 import arancinogal4 from "../assets/maxresdefault.jpg";
+import Footer from './Footer';
 
 const Home = () => {
-  const AutoplaySlider = withAutoplay(AwesomeSlider);
+  //const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
     <>
-      <Container fluid className="m-0 p-0">
+      <Container fluid className="m-0 p-0" id="top">
         <Container fluid className="m-0 p-0">
           <MyNavbar />
         </Container>
@@ -53,50 +54,6 @@ const Home = () => {
               <img src={logo1} alt="arancino1" />
             </div>
           </div>
-        </Container>
-        <Container fluid className=" video-settings">
-          {/*<AutoplaySlider
-            play={true}
-            cancelOnInteraction={false} // should stop playing on user interaction
-            interval={4000}
-            className="video-settings carousel-img"
-          >
-            <div
-              data-src={arancinogal1}
-              className="video-settings carousel-img"
-            />
-            <div
-              data-src={arancinogal2}
-              className="video-settings carousel-img"
-            />
-            <div
-              data-src={arancinogal3}
-              className="video-settings carousel-img"
-            />
-          </AutoplaySlider>*/}
-          <Carousel slide className="d-flex align-items-center justify-content-center">
-            <Carousel.Item>
-              <img
-                src={arancinogal1}
-                alt="arancino-carousel-img1"
-                className="text-center d-flex align-items-center justify-content-center carousel-img"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={arancinogal2}
-                alt="arancino-carousel-img2"
-                className="text-center d-flex align-items-center justify-content-center carousel-img"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                src={arancinogal3}
-                alt="arancino-carousel-img3"
-                className="text-center d-flex align-items-center justify-content-center carousel-img"
-              />
-            </Carousel.Item>
-          </Carousel>
         </Container>
 
         <Container
@@ -422,6 +379,76 @@ const Home = () => {
               </Col>
             </Row>
           </Container>
+        </Container>
+        <Container id="gallery" fluid className=" video-settings pb-5 mb-5">
+          {/*<AutoplaySlider
+            play={true}
+            cancelOnInteraction={false} // should stop playing on user interaction
+            interval={4000}
+            className="video-settings carousel-img"
+          >
+            <div
+              data-src={arancinogal1}
+              className="video-settings carousel-img"
+            />
+            <div
+              data-src={arancinogal2}
+              className="video-settings carousel-img"
+            />
+            <div
+              data-src={arancinogal3}
+              className="video-settings carousel-img"
+            />
+          </AutoplaySlider>*/}
+          <Carousel
+            slide
+            className="d-flex align-items-center justify-content-center"
+            data-aos="zoom-in"
+            data-aos-easing="ease-in-sine"
+            data-aos-duration="1000"
+          >
+            <Carousel.Item>
+              <img
+                src={arancinogal4}
+                alt="arancino-carousel-img1"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={arancinogal3}
+                alt="arancino-carousel-img2"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={arancinogal2}
+                alt="arancino-carousel-img3"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={arancinogal1}
+                alt="arancino-carousel-img3"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </Container>
+
+        <Container fluid className="m-5 p-5">
+          <Footer />
+        </Container>
+
+        <Container fluid className="mx-5 p-0 d-flex align-items-center justify-content-center">
+          <a
+            href="#top"
+            className="my-font-home text-decoration-none text-decoration-none text-danger bg-warning rounded-pill border border-5 border-dark px-3 mx-3 mt-3"
+          >
+            - BACK ON TOP -
+          </a>
         </Container>
       </Container>
     </>
