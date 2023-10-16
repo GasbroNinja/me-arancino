@@ -1,15 +1,24 @@
 import React from 'react'
 import "../style/Home.css"
 import "../style/MyNavbar.css";
-import { Col, Container, Row } from 'react-bootstrap';
+import "react-awesome-slider/dist/custom-animations/cube-animation.css";
+import AwesomeSlider from "react-awesome-slider";
+import withAutoplay from "react-awesome-slider/dist/autoplay";
+import "react-awesome-slider/dist/styles.css";
+import { Carousel, Col, Container, Row } from 'react-bootstrap';
 import MyNavbar from './MyNavbar';
 import logo1 from "../assets/OrangeandYellowIllustrationThaiTeaLogo.png";
-import CaroselloArancino from './CaroselloArancino';
+
 import ricetta1img from "../assets/arancino-bg.png";
 import ricetta2img from "../assets/img_6103-800x500.jpg";
 import video1 from "../assets/MessinadallaltoVideodiAndreaPeri.mp4"
+import arancinogal1 from "../assets/ricetta-arancini.jpg";
+import arancinogal2 from "../assets/ArancinoFlliGangiBronte.jpg";
+import arancinogal3 from "../assets/ZagaraBrolo08.jpg";
+import arancinogal4 from "../assets/maxresdefault.jpg";
 
 const Home = () => {
+  const AutoplaySlider = withAutoplay(AwesomeSlider);
 
   return (
     <>
@@ -45,8 +54,49 @@ const Home = () => {
             </div>
           </div>
         </Container>
-        <Container fluid className="py-3">
-          {/*<CaroselloArancino />*/}
+        <Container fluid className=" video-settings">
+          {/*<AutoplaySlider
+            play={true}
+            cancelOnInteraction={false} // should stop playing on user interaction
+            interval={4000}
+            className="video-settings carousel-img"
+          >
+            <div
+              data-src={arancinogal1}
+              className="video-settings carousel-img"
+            />
+            <div
+              data-src={arancinogal2}
+              className="video-settings carousel-img"
+            />
+            <div
+              data-src={arancinogal3}
+              className="video-settings carousel-img"
+            />
+          </AutoplaySlider>*/}
+          <Carousel slide className="d-flex align-items-center justify-content-center">
+            <Carousel.Item>
+              <img
+                src={arancinogal1}
+                alt="arancino-carousel-img1"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={arancinogal2}
+                alt="arancino-carousel-img2"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                src={arancinogal3}
+                alt="arancino-carousel-img3"
+                className="text-center d-flex align-items-center justify-content-center carousel-img"
+              />
+            </Carousel.Item>
+          </Carousel>
         </Container>
 
         <Container
@@ -143,7 +193,7 @@ const Home = () => {
               data-aos-duration="3000"
             >
               <div
-                className="image"
+                className="image img-sizing"
                 data-aos="fade-up-left"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="3000"
@@ -151,7 +201,6 @@ const Home = () => {
                 <img
                   src={ricetta2img}
                   alt="arancinorecipes"
-                  fluid
                   className="img-sizing pb-3"
                 />
               </div>
@@ -162,7 +211,7 @@ const Home = () => {
                   della cucina Messinese, caratterizzati dalla presenza del
                   pistacchio 💚
                 </h4>
-                <div className="">
+                <div className="font-recip">
                   Ecco una descrizione della ricetta per preparare gli arancini
                   al pistacchio messinesi: <p>Ingredienti:</p>
                   <ol className="py-2 px-0 font-recip">
@@ -193,7 +242,7 @@ const Home = () => {
                   </ol>
                   <h5>Procedimento:</h5>
                   <p>Preparazione del risotto:</p>
-                  <ol>
+                  <ol className="font-recip">
                     <li>
                       {" "}
                       In una pentola, soffriggere la cipolla con un po' di olio
@@ -223,7 +272,7 @@ const Home = () => {
                     notte). Questo renderà il risotto più facile da lavorare.
                   </p>
                   <p>Creazione degli arancini:</p>
-                  <ol>
+                  <ol className="font-recip">
                     <li>
                       Prendere una porzione di risotto raffreddato e appiattirlo
                       sulla mano.
@@ -238,7 +287,7 @@ const Home = () => {
                     </li>
                   </ol>
                   <p>Panatura e frittura:</p>
-                  <ol>
+                  <ol className="font-recip">
                     <li>
                       Passare gli arancini prima nell'uovo sbattuto e poi nel
                       pangrattato, assicurandosi che siano ben coperti.{" "}
@@ -249,7 +298,7 @@ const Home = () => {
                     </li>
                   </ol>
                   <p>Servire:</p>
-                  <ol>
+                  <ol className="font-recip">
                     <li>
                       Scolare gli arancini su carta assorbente per eliminare
                       l'eccesso di olio.{" "}
@@ -278,13 +327,18 @@ const Home = () => {
             fluid
             className="mb-3 d-flex flex-column align-items-center justify-content-center"
           >
-            <div className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center">
+            <div
+              className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center"
+              data-aos="fade-up"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="2000"
+            >
               <h2 className="text-center p-span-text-animated">
                 Sicily Messina
               </h2>
             </div>
 
-            <div className="m-0 p-0 d-flex align-items-center justify-content-center">
+            <div className="video-settings m-0 p-0 d-flex align-items-center justify-content-center">
               <video
                 src={video1}
                 autoPlay={true}
@@ -295,12 +349,78 @@ const Home = () => {
               />
             </div>
           </Container>
-          <Container fluid className="m-0 p-0">
-            <div className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center">
+          <Container
+            fluid
+            className="m-0 p-0 d-flex justify-content-center align-items-center"
+          >
+            <div
+              id="chisiamo"
+              className="p-text-animated p-2 my-5 d-flex justify-content-center align-items-center"
+              data-aos="fade-down"
+              data-aos-easing="ease-in-sine"
+              data-aos-duration="2000"
+            >
               <h2 className="text-center p-span-text-animated">Chi Siamo?</h2>
-              
             </div>
-            
+          </Container>
+
+          <Container
+            fluid
+            className="m-0 p-0 d-flex justify-content-center align-items-center"
+          >
+            <Row className="py-5 d-flex align-items-center justify-content-center">
+              <Col
+                xs={12}
+                sm={12}
+                md={12}
+                lg={12}
+                xl={12}
+                xxl={12}
+                className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-5"
+                data-aos="zoom-in"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="3000"
+              >
+                <div className="d-flex justify-content-center flex-column text-white p-text-animated font-recip border-0">
+                  <h4 className="py-4 fw-bold text-uppercase d-flex justify-content-center flex-column text-white p-text-animated font-recip">
+                    Esperienza Gustosa della Sicilia: <br /> 🌟
+                    <br /> I Nostri Arancini
+                  </h4>
+                  <p className="font-recip py-3">
+                    🏝 Senti la magia della Sicilia in ogni morso dei nostri
+                    arancini artigianali, un vero simbolo della tradizione
+                    culinaria isolana.
+                  </p>
+                  <p className="font-recip py-3">
+                    🍅 Ingredienti Freschi e Autentici: Preparati con riso
+                    selezionato, ripieni di ragù saporito o mozzarella cremosa,
+                    gli arancini catturano il gusto autentico della Sicilia. Gli
+                    aromi intensi dei nostri ingredienti freschi ti porteranno
+                    in un viaggio culinario unico.
+                  </p>
+                  <p className="font-recip py-3">
+                    🔥 Fritti alla Perfezione: La croccantezza dorata della
+                    nostra panatura segreta è ciò che rende i nostri arancini
+                    irresistibili. Una consistenza croccante all'esterno,
+                    contrastata da una morbida esplosione di sapori all'interno
+                    - ogni arancino è un capolavoro di equilibrio gustativo.
+                  </p>
+                  <p className="font-recip py-3">
+                    👨‍👩‍👧 Per Tutta la Famiglia: Perfetti per un pasto veloce o da
+                    condividere in compagnia, i nostri arancini portano la gioia
+                    della tavola siciliana direttamente a casa tua. Condividi
+                    momenti di felicità e autenticità con la tua famiglia e gli
+                    amici.
+                  </p>
+                  <p className="font-recip py-3">
+                    🌞 Assapora il Sole della Sicilia: Lasciati trasportare
+                    dalla Sicilia con ogni morso. La combinazione di sapori
+                    ricchi e autentici è come una giornata di sole sulla costa
+                    mediterranea.
+                  </p>
+                </div>
+              </Col>
+            </Row>
           </Container>
         </Container>
       </Container>
