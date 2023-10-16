@@ -346,14 +346,14 @@ const Home = () => {
               </h2>
             </div>
 
-            <div className="video-settings m-0 p-0 d-flex align-items-center justify-content-center">
+            <div className="video-settings box m-0 p-0 d-flex align-items-center justify-content-center">
               <video
                 src={video1}
                 autoPlay={true}
                 muted
                 loop
                 controls
-                className="m-0 p-0 d-flex align-items-center justify-content-center border border-3 rounded-3 border-danger"
+                className="box-inner m-0 p-0 d-flex align-items-center justify-content-center border border-3 rounded-5 border-danger"
               />
             </div>
           </Container>
