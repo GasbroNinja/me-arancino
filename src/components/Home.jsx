@@ -2,13 +2,10 @@ import React from 'react'
 import "../style/Home.css"
 import "../style/MyNavbar.css";
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
-//import AwesomeSlider from "react-awesome-slider";
-//import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
 import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
 import MyNavbar from './MyNavbar';
 import logo1 from "../assets/OrangeandYellowIllustrationThaiTeaLogo.png";
-
 import ricetta1img from "../assets/arancino-bg.png";
 import ricetta2img from "../assets/img_6103-800x500.jpg";
 import video1 from "../assets/MessinadallaltoVideodiAndreaPeri.mp4"
@@ -19,8 +16,6 @@ import arancinogal4 from "../assets/maxresdefault.jpg";
 import Footer from './Footer';
 
 const Home = () => {
-  //const AutoplaySlider = withAutoplay(AwesomeSlider);
-
   return (
     <>
       <Container fluid className="m-0 p-0" id="top">
@@ -469,25 +464,6 @@ const Home = () => {
           </Container>
         </Container>
         <Container id="gallery" fluid className=" video-settings pb-5 mb-5">
-          {/*<AutoplaySlider
-            play={true}
-            cancelOnInteraction={false} // should stop playing on user interaction
-            interval={4000}
-            className="video-settings carousel-img"
-          >
-            <div
-              data-src={arancinogal1}
-              className="video-settings carousel-img"
-            />
-            <div
-              data-src={arancinogal2}
-              className="video-settings carousel-img"
-            />
-            <div
-              data-src={arancinogal3}
-              className="video-settings carousel-img"
-            />
-          </AutoplaySlider>*/}
           <Carousel
             slide
             className="d-sm-none d-md-none d-lg-flex align-items-center justify-content-center"

@@ -3,8 +3,6 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import { ImFacebook2 } from "react-icons/im";
 import { GrInstagram } from "react-icons/gr";
 
-import { Link } from "react-router-dom";
-
 const Footer = () => {
   return (
     <Container
