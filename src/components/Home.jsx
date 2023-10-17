@@ -490,7 +490,7 @@ const Home = () => {
           </AutoplaySlider>*/}
           <Carousel
             slide
-            className="d-sm-none d-md-none d-lg-block d-flex align-items-center justify-content-center"
+            className="d-sm-none d-md-none d-lg-flex align-items-center justify-content-center"
             data-aos="zoom-in"
             data-aos-easing="ease-in-sine"
             data-aos-duration="1000"
