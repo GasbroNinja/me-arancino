@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import "../App.css"
-import { Container, Nav, NavDropdown, Navbar, Offcanvas } from 'react-bootstrap';
+import { Container, Nav, NavDropdown, Navbar } from 'react-bootstrap';
 import logo1 from "../assets/LogoTrasparent.png";
 import "../style/MyNavbar.css"
 
@@ -10,7 +10,7 @@ const MyNavbar = () => {
 
   const controlNavbar = () => {
 
-    if(window.scrollY > 100){
+    if(window.bo > 50){
       setShow(false)
     } else {
       setShow(true)
@@ -29,7 +29,7 @@ const MyNavbar = () => {
     <>
       <Navbar
         collapseOnSelect
-        expand="lg"
+        expand="xl"
         className={`mx-2 px-3 rounded-2 mb-3 myfont offCanv nav-settings ${
           show ? "nav-set-down" : "nav-set-up"
         }`}
@@ -48,30 +48,32 @@ const MyNavbar = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            
-              <Nav className="justify-content-end flex-grow-1 pe-3">
-                
-                <Nav.Link href="#action1" className="myfont px-3">
-                  Home
-                </Nav.Link>
-                <Nav.Link href="#chisiamo" className="myfont px-3">
-                  Chi siamo?
-                </Nav.Link>
-                <Nav.Link href="#ricette" className="myfont px-3">
-                  Ricette
-                </Nav.Link>
-                <NavDropdown title="Gallery" id="collapsible-nav-dropdown" className="myfont3 px-2">
-                  <NavDropdown.Item href="#gallery" className="myfont2">
-                    Arancino
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#action5" className="myfont2">
-                    Dove?
-                  </NavDropdown.Item>
-                  <NavDropdown.Item href="#messina" className="myfont2">
-                    Stretto
-                  </NavDropdown.Item>
-                </NavDropdown>
-              </Nav>
+            <Nav className="justify-content-end flex-grow-1 pe-3">
+              <Nav.Link href="#action1" className="myfont px-3">
+                Home
+              </Nav.Link>
+              <Nav.Link href="#chisiamo" className="myfont px-3">
+                Chi siamo?
+              </Nav.Link>
+              <Nav.Link href="#ricette" className="myfont px-3">
+                Ricette
+              </Nav.Link>
+              <Nav.Link href="#dove" className="myfont px-3">
+                Dove?
+              </Nav.Link>
+              <Nav.Link href="#messina" className="myfont px-3">
+                Stretto
+              </Nav.Link>
+              <NavDropdown
+                title="Gallery"
+                id="navbarScrollingDropdown"
+                className="myfont3 px-2"
+              >
+                <NavDropdown.Item href="#gallery" className="myfont2">
+                  Arancino
+                </NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
