@@ -334,6 +334,7 @@ const Home = () => {
             </div>
           </Row>
           <Container
+            id="messina"
             fluid
             className="mb-3 d-flex flex-column align-items-center justify-content-center"
           >
@@ -348,8 +349,12 @@ const Home = () => {
               </h2>
             </div>
 
-            <Row className="d-none d-md-block video-settings m-0 p-0 d-flex align-items-center justify-content-center">
+            <Row
+              id="messina"
+              className="d-none d-md-block video-settings m-0 p-0 d-flex align-items-center justify-content-center"
+            >
               <Col
+                id="dove"
                 xs={12}
                 sm={12}
                 md={12}
