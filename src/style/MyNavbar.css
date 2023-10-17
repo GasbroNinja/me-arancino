@@ -16,19 +16,6 @@
     transition: 1s
 }
 
-@keyframes fadeup {
-    0%{
-        
-    };
-    50%{
-
-    };
-    100%{
-
-    };
-    
-}
-
 .myfont{
     font-size: 36px;
     font-weight: 400;

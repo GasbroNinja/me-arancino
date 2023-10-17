@@ -1,163 +1,156 @@
- * {
-     position: relative;
-     box-sizing: border-box;
-     
- }
+* {
+    position: relative;
+    box-sizing: border-box;
+    
+}
 
 /* .iframely-embed {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     z-index: 50;
-     background: white;
- }
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background: white;
+}
 */
- #app {
-     z-index: 100;
- }
+#app {
+    z-index: 100;
+}
 
- /*#app:hover {
+
+#app {
+    display: grid;
+    grid-template-columns: 2fr;
+    align-items: center;
+    padding-bottom: 1vmin;
+    max-height: 90vh;
+    width: 100%;
+/* background-image: url("../assets/MessinadallaltoVideodiAndreaPeri.mp4");*/
+    background-position: 150%;
+    background-size: cover;;
+    color: #fec36c;
+    padding: 100px 0;
+    animation: image-in 0.5s cubic-bezier(0.5, 0, 0.1, 1) 0s backwards;
+
     
- }
-*/
- #app {
-     display: grid;
-     grid-template-columns: 2fr;
-     align-items: center;
-     padding-bottom: 1vmin;
-     max-height: 90vh;
-     width: 100%;
-    /* background-image: url("../assets/MessinadallaltoVideodiAndreaPeri.mp4");*/
-     background-position: 150%;
-     background-size: cover;;
-     color: #fec36c;
-     padding: 100px 0;
-     animation: image-in 0.5s cubic-bezier(0.5, 0, 0.1, 1) 0s backwards;
+}
 
-     
- }
-
- body {
-     
-     padding: 1vmin;
-     background: #3a0f1c;
-
- }
-
- .title {
-     padding-left: 1em;
-     grid-column: -1;
-     grid-row: 1;
-     font-family: 'Palanquin', sans-serif;
-     font-size: 6vw;
-     width: 100%;
-     z-index: 2;
-     -webkit-text-stroke: 1px #6c3600;
+body {
     
- }
+    padding: 1vmin;
+    background: #3a0f1c;
 
- .title>.title-inner {
-     display: inline-block;
-     
- }
+}
 
- @keyframes text-clip {
-     from {
-         clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
-     }
+.title {
+    padding-left: 1em;
+    grid-column: -1;
+    grid-row: 1;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 6vw;
+    width: 100%;
+    z-index: 2;
+    -webkit-text-stroke: 1px #6c3600;
 
-     to {
-         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-     }
- }
+}
 
- @keyframes outer-left {
-     from {
-         transform: translateX(100%);
-     }
+.title>.title-inner {
+    display: inline-block;
+    
+}
 
-     to {
-         transform: none;
-     }
- }
+@keyframes text-clip {
+    from {
+        clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+    }
 
- @keyframes inner-left {
-     from {
-         transform: translateX(-50%);
-     }
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
 
-     to {
-         transform: none;
-     }
- }
+@keyframes outer-left {
+    from {
+        transform: translateX(100%);
+    }
 
- .cafe,
- .mozart {
-    text-shadow: 50px 50px 32px 0 #341701;
-     animation: outer-left 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
- }
+    to {
+        transform: none;
+    }
+}
 
- .title-inner {
-     display: inline-block;
-     animation: inner-left 2s 0s ease both;
- }
+@keyframes inner-left {
+    from {
+        transform: translateX(-50%);
+    }
 
- .cafe-inner {
-     display: inline-block;
-     animation: inner-left 2s 0s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
- }
+    to {
+        transform: none;
+    }
+}
 
- .mozart-inner {
-     animation: text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
- }
+.cafe,
+.mozart {
+text-shadow: 50px 50px 32px 0 #341701;
+    animation: outer-left 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
 
- .title {
-     animation: outer-left 2s 0s ease both;
- }
+.title-inner {
+    display: inline-block;
+    animation: inner-left 2s 0s ease both;
+}
 
- .cafe>.cafe-inner {
-     display: inline-block;
- }
+.cafe-inner {
+    display: inline-block;
+    animation: inner-left 2s 0s ease both, text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
 
- .mozart {
-     display: inline-block;
- }
+.mozart-inner {
+    animation: text-clip 2s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
 
- .image {
-     height: auto;
-     display: flex;
-     
-     flex-wrap: wrap;
-     margin: 0;
-     padding-bottom: 1rem;
-     opacity: 0.9;
-     animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0s backwards;
- }
+.title {
+    animation: outer-left 2s 0s ease both;
+}
 
- @keyframes image-in {
-     from {
-         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-         transform: scale(1);
-     }
+.cafe>.cafe-inner {
+    display: inline-block;
+}
 
-     to {
-         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-         transform: scale(1.2);
-     }
- }
+.mozart {
+    display: inline-block;
+}
 
- .image img {
-     display: block;
-     max-width: 100%;
-     max-height: auto;
- }
+.image {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 1rem;
+    opacity: 0.9;
+    animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0s backwards;
+}
 
+@keyframes image-in {
+    from {
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transform: scale(1);
+    }
 
+    to {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transform: scale(1.2);
+    }
+}
+
+.image img {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
 
 /* TEXT ANIMATION HOME */
-
 
 .p-text-animated {
     text-align: center;
@@ -169,7 +162,6 @@
     border-width: 6px 0;
     padding: 1.5em 0em;
     max-width: 40em;
-    /*change setting for position*/
 }
 
 .p-span-text-animated {
@@ -181,14 +173,11 @@
     display: block;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255, 181, 134, 0.5);
-    /* Clip Background Image */
     background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
-    /* Animate Background Image */
     -webkit-text-fill-color: transparent;
     animation: aitf 80s linear infinite;
-    /* Activate hardware acceleration for smoother animations */
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
 }
