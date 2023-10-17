@@ -58,36 +58,36 @@ const Footer = () => {
             </h5>
             <ul className="list-unstyled">
               <li>
-                <Link
-                  to="#home"
+                <a
+                  href="#top"
                   className="my-font-home text-light text-decoration-none text-uppercase  font-recip m-0 py-2"
                 >
                   HOME
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#gallery"
+                <a
+                  href="#gallery"
                   className="my-font-home text-light text-decoration-none text-uppercase  font-recip m-0 py-2"
                 >
                   GALLERY
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#chisiamo"
+                <a
+                  href="#chisiamo"
                   className="my-font-home text-light text-decoration-none text-uppercase  font-recip m-0 py-2"
                 >
                   CHI SIAMO?
-                </Link>
+                </a>
               </li>
               <li>
-                <Link
-                  to="#ricette"
+                <a
+                  href="#ricette"
                   className="my-font-home text-light text-decoration-none text-uppercase  font-recip m-0 py-1"
                 >
                   RICETTE
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
@@ -95,7 +95,12 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-light py-2 my-font-home">
-        <p className="mb-5">© 2023 Copyright: </p>
+        <p className="mb-5">
+          © 2023 Copyright: <br />
+          <span className="fs-5 fst-italic fw-semibold text-danger">
+            All rights reserved to <br /> "Ma n'Arancino S.r.l."
+          </span>
+        </p>
         <br />
         <a
           href="https://www.linkedin.com/in/gabriele-cuscin%C3%A0/"
@@ -104,7 +109,6 @@ const Footer = () => {
           manarancino.it
         </a>
       </div>
-
     </Container>
   );
 };

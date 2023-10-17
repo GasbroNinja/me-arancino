@@ -5,7 +5,7 @@ import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 //import AwesomeSlider from "react-awesome-slider";
 //import withAutoplay from "react-awesome-slider/dist/autoplay";
 import "react-awesome-slider/dist/styles.css";
-import { Carousel, Col, Container, Row } from 'react-bootstrap';
+import { Button, Carousel, Col, Container, Row } from 'react-bootstrap';
 import MyNavbar from './MyNavbar';
 import logo1 from "../assets/OrangeandYellowIllustrationThaiTeaLogo.png";
 
@@ -105,7 +105,7 @@ const Home = () => {
                   className="img-sizing pb-3 px-sm-4 px-md-2 px-lg-0"
                 />
                 <div className="w-100 d-flex justify-content-center text-start align-items-center flex-column text-white flex-wrap ">
-                  <h4 className="py-2 fw-bold text-center">
+                  <h4 className="py-2 fw-bold text-center text-uppercase">
                     Arancino: una delizia croccante e succulenta al ragù 🍊
                   </h4>
                   <div className="font-recip">
@@ -490,7 +490,7 @@ const Home = () => {
           </AutoplaySlider>*/}
           <Carousel
             slide
-            className="d-sm-none d-md-none d-flex align-items-center justify-content-center"
+            className="d-sm-none d-md-none d-lg-block d-flex align-items-center justify-content-center"
             data-aos="zoom-in"
             data-aos-easing="ease-in-sine"
             data-aos-duration="1000"
@@ -534,12 +534,12 @@ const Home = () => {
           fluid
           className="mb-3 p-0 d-flex align-items-center justify-content-center"
         >
-          <a
+          <Button
             href="#top"
             className="my-font-home text-decoration-none text-decoration-none text-danger bg-warning rounded-pill border border-5 border-dark px-3 mx-3 mt-3"
           >
             - BACK ON TOP -
-          </a>
+          </Button>
         </Container>
       </Container>
     </>

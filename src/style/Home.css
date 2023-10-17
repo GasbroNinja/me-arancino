@@ -258,7 +258,7 @@
 
 @media screen and (max-width: 1200px) {
     .video-settings {
-        transform: scale(0.5);
+        transform: scale(1);
     }
     .carousel-img {
         max-width: auto;
