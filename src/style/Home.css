@@ -4,7 +4,7 @@
      
  }
 
- .iframely-embed {
+/* .iframely-embed {
      position: fixed;
      top: 0;
      left: 0;
@@ -13,7 +13,7 @@
      z-index: 50;
      background: white;
  }
-
+*/
  #app {
      z-index: 100;
  }
@@ -133,7 +133,7 @@
      margin: 0;
      padding-bottom: 1rem;
      opacity: 0.9;
-     animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 2s backwards;
+     animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0s backwards;
  }
 
  @keyframes image-in {
@@ -162,19 +162,22 @@
 .p-text-animated {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 1px;
     display: flex;
+    align-content: center;
     border: 4px double rgba(255, 255, 255, .25);
-    border-width: 4px 0;
+    border-width: 6px 0;
     padding: 1.5em 0em;
     max-width: 40em;
     /*change setting for position*/
 }
 
 .p-span-text-animated {
-    font: 700 5em "Oswald", sans-serif;
-    letter-spacing: 0;
-    padding: 0.25em 0 0.325em;
+    font-weight: 700;
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0px;
+    padding: 0.15em 0 0.125em;
     display: block;
     margin: 0 auto;
     text-shadow: 0 0 80px rgba(255, 181, 134, 0.5);
@@ -188,6 +191,16 @@
     /* Activate hardware acceleration for smoother animations */
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .p-text-animated {
+        max-width: 10em;
+    };
+
+    .p-span-text-animated{
+        font-size: 40px;
+    }
 }
 
 /* Animate Background Image */
@@ -216,30 +229,50 @@
 }
 
 .video-settings{
-    max-width: auto;
+    margin: auto;
+    transform: scale(0.5);
 }
 
 @media screen and (max-width: 600px) {
     .video-settings {
-        max-width: 350px;
+
+        transform: scale(0.5);
+    }
+    .carousel-img {
+        max-width: auto;
+        max-height: auto;
     }
 }
 
 @media screen and (max-width: 900px) {
     .video-settings {
-        max-width: 600px;
+
+        transform: scale(0.5);
     }
+    .carousel-img {
+        max-width: auto;
+        max-height: auto;
+    }
+
 }
 
 @media screen and (max-width: 1200px) {
     .video-settings {
-        max-width: 900px;
+        transform: scale(0.5);
+    }
+    .carousel-img {
+        max-width: auto;
+        max-height: auto;
     }
 }
 
 @media screen and (min-width: 1400px) {
     .video-settings {
-        width: 100%;
+        transform: scale(1);
+    }
+    .carousel-img {
+        max-width: auto;
+        max-height: auto;
     }
 }
 
@@ -267,7 +300,7 @@
 }
 
 
-/* BORDER CUSTOMIZED FOR VIDEO */
+/* BORDER CUSTOMIZED FOR VIDEO (next implementation)
 
  .box {
      position: absolute;
@@ -329,4 +362,5 @@
 
  .box .box-inner:after {
      right: -2px;
- }
+ } 
+*/

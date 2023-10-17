@@ -58,13 +58,13 @@ const Home = () => {
 
         <Container
           fluid
-          className="py-3 d-flex align-items-center justify-content-center flex-wrap flex-column"
+          className="py-3 d-flex align-items-center justify-content-center flex-wrap flex-column "
           data-aos="flip-up"
           data-aos-easing="ease-in-sine"
           data-aos-duration="3000"
         >
           <div
-            className=" m-5 d-flex flex-wrap flex-column"
+            className=" m-5 d-flex flex-wrap flex-column "
             data-aos="zoom-up"
             data-aos-easing="ease-in-sine"
             data-aos-duration="3000"
@@ -79,7 +79,7 @@ const Home = () => {
             </p>
           </div>
         </Container>
-        <Container fluid className="p-3">
+        <Container fluid className="p-sm-0 p-md-1 p-lg-3 ">
           <Row
             className="py-5 d-flex align-items-center justify-content-center"
             id="ricette"
@@ -102,9 +102,9 @@ const Home = () => {
                 <img
                   src={ricetta1img}
                   alt="arancinorecipes"
-                  className="img-sizing pb-3"
+                  className="img-sizing pb-3 px-sm-4 px-md-2 px-lg-0"
                 />
-                <div className="d-flex justify-content-center text-start align-items-center flex-column text-white p-text-animated flex-wrap ">
+                <div className="w-100 d-flex justify-content-center text-start align-items-center flex-column text-white flex-wrap ">
                   <h4 className="py-2 fw-bold text-center">
                     Arancino: una delizia croccante e succulenta al ragù 🍊
                   </h4>
@@ -132,10 +132,10 @@ const Home = () => {
                       </li>
                       <li>Sale e pepe: a piacere </li>
                     </ul>
+                    <p className="my-font-home mt-3 text-center">
+                      Procedimento:
+                    </p>
                     <ol>
-                      <p className="my-font-home mt-3 text-center">
-                        Procedimento:
-                      </p>
                       <li>Cuoci il riso Carnaroli e lascialo raffreddare.</li>
                       <li>
                         {" "}
@@ -161,8 +161,10 @@ const Home = () => {
                         l'olio in eccesso.
                       </li>
                     </ol>
-                    <p className="my-font-home mt-3 text-start">
-                      🎉 Gusta e condividi l'autentico sapore siciliano 🎉
+                    <p className="mt-3 text-start px-2">
+                      <p className="fs-4 py-3 text-center fw-bold">
+                        🎉 Gusta e condividi l'autentico sapore siciliano 🎉
+                      </p>
                       L'arancino è pronto per essere gustato caldo, magari
                       accompagnato da una fresca bevanda estiva. Invita gli
                       amici e la famiglia a condividere questo piatto
@@ -183,7 +185,7 @@ const Home = () => {
               lg={12}
               xl={6}
               xxl={6}
-              className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-5"
+              className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-sm-0 px-md-3 px-lg-5"
               data-aos="fade-up"
               data-aos-easing="ease-in-sine"
               data-aos-duration="3000"
@@ -201,13 +203,13 @@ const Home = () => {
                 />
               </div>
               {/*change size img*/}
-              <div className="d-flex justify-content-center text-start flex-column text-white p-text-animated font-recip">
+              <div className="d-flex justify-content-center text-start flex-column text-white px-3 font-recip">
                 <h4 className="py-2 fw-bold text-uppercase text-center">
                   Gli arancini al pistacchio messinesi sono una prelibatezza
                   della cucina Messinese, caratterizzati dalla presenza del
                   pistacchio 💚
                 </h4>
-                <div className="font-recip">
+                <div className="">
                   Ecco una descrizione della ricetta per preparare gli arancini
                   al pistacchio messinesi:{" "}
                   <p className="my-font-home pt-3 text-center">Ingredienti:</p>
@@ -237,13 +239,13 @@ const Home = () => {
                       cotto per il ripieno (a piacere)
                     </li>
                   </ol>
-                  <h5 className="my-font-home mb-3 text-center">
+                  <p className="fs-1 my-font-home mb-3 text-center">
                     Procedimento:
-                  </h5>
+                  </p>
                   <p className="fs-5 my-font-home text-center">
                     Preparazione del risotto:
                   </p>
-                  <ol className="font-recip">
+                  <ol className="px-0">
                     <li>
                       {" "}
                       In una pentola, soffriggere la cipolla con un po' di olio
@@ -275,10 +277,10 @@ const Home = () => {
                     per diverse ore o durante la notte). Questo renderà il
                     risotto più facile da lavorare.
                   </p>
-                  <p className="my-font-home text-center">
+                  <p className="fs-1 my-font-home text-center">
                     Creazione degli arancini:
                   </p>
-                  <ol className="font-recip">
+                  <ol className="font-recip p-0">
                     <li>
                       Prendere una porzione di risotto raffreddato e appiattirlo
                       sulla mano.
@@ -292,10 +294,10 @@ const Home = () => {
                       rotonda.{" "}
                     </li>
                   </ol>
-                  <p className="my-font-home text-center">
+                  <p className="fs-1 my-font-home text-center  p-0">
                     Panatura e frittura:
                   </p>
-                  <ol className="font-recip">
+                  <ol className="font-recip  p-0">
                     <li>
                       Passare gli arancini prima nell'uovo sbattuto e poi nel
                       pangrattato, assicurandosi che siano ben coperti.{" "}
@@ -305,8 +307,8 @@ const Home = () => {
                       quando sono dorati e croccanti.
                     </li>
                   </ol>
-                  <p className="my-font-home text-center">Servire:</p>
-                  <ol className="font-recip">
+                  <p className="fs-1 my-font-home text-center">Servire:</p>
+                  <ol className="font-recip  p-0">
                     <li>
                       Scolare gli arancini su carta assorbente per eliminare
                       l'eccesso di olio.{" "}
@@ -321,12 +323,12 @@ const Home = () => {
               </div>
             </Col>
             <div
-              className="p-text-animated py-5 mt-5 border-0 "
+              className="py-5 mt-5 border-0 "
               data-aos="fade-up"
               data-aos-easing="ease-in-sine"
               data-aos-duration="2000"
             >
-              <h4 className="text-center  p-span-text-animated border-0">
+              <h4 className="text-center text-uppercase p-span-text-animated border-0">
                 Buon appetito!
               </h4>
             </div>
@@ -346,16 +348,29 @@ const Home = () => {
               </h2>
             </div>
 
-            <div className="video-settings box m-0 p-0 d-flex align-items-center justify-content-center">
-              <video
-                src={video1}
-                autoPlay={true}
-                muted
-                loop
-                controls
-                className="box-inner m-0 p-0 d-flex align-items-center justify-content-center border border-3 rounded-5 border-danger"
-              />
-            </div>
+            <Row className="d-none d-md-block video-settings m-0 p-0 d-flex align-items-center justify-content-center">
+              <Col
+                xs={12}
+                sm={12}
+                md={12}
+                lg={12}
+                xl={12}
+                xxl={12}
+                className="d-flex align-items-center  justify-content-top flex-column flex-wrap m-0 p-0"
+                data-aos="fade-down"
+                data-aos-easing="ease-in-sine"
+                data-aos-duration="1000"
+              >
+                <video
+                  src={video1}
+                  autoPlay={true}
+                  muted
+                  loop
+                  controls
+                  className="m-0 p-0 d-flex align-items-center justify-content-center"
+                />
+              </Col>
+            </Row>
           </Container>
           <Container
             fluid
@@ -376,7 +391,7 @@ const Home = () => {
             fluid
             className="m-0 p-0 d-flex justify-content-center align-items-center"
           >
-            <Row className="py-5 d-flex align-items-center justify-content-center">
+            <Row className="py-5 w-100 d-flex align-items-center justify-content-center">
               <Col
                 xs={12}
                 sm={12}
@@ -384,48 +399,65 @@ const Home = () => {
                 lg={12}
                 xl={12}
                 xxl={12}
-                className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-5"
+                className="d-flex align-items-center  justify-content-top flex-column flex-wrap px-sm-0 px-md-3 px-lg-5"
                 data-aos="zoom-in"
                 data-aos-easing="ease-in-sine"
                 data-aos-duration="3000"
               >
-                <div className="d-flex justify-content-center flex-column text-white p-text-animated font-recip border-0">
-                  <h4 className="my-font-home py-4 fw-bold text-uppercase d-flex justify-content-center flex-column text-white p-text-animated font-recip">
+                <div className="w-100 d-flex justify-content-center flex-column text-white  font-recip border-0">
+                  <h4 className="my-font-home py-4 fw-bold text-uppercase d-flex justify-content-center align-items-center flex-column text-dark rounded-5 text-center bg-warning  font-recip">
                     Esperienza Gustosa della Sicilia: <br /> 🌟
                     <br /> I Nostri Arancini
                   </h4>
-                  <p className="font-recip py-3">
-                    🏝 Senti la magia della Sicilia in ogni morso dei nostri
-                    arancini artigianali, un vero simbolo della tradizione
-                    culinaria isolana.
-                  </p>
-                  <p className="font-recip py-3">
-                    🍅 Ingredienti Freschi e Autentici: Preparati con riso
-                    selezionato, ripieni di ragù saporito o mozzarella cremosa,
-                    gli arancini catturano il gusto autentico della Sicilia. Gli
-                    aromi intensi dei nostri ingredienti freschi ti porteranno
-                    in un viaggio culinario unico.
-                  </p>
-                  <p className="font-recip py-3">
-                    🔥 Fritti alla Perfezione: La croccantezza dorata della
-                    nostra panatura segreta è ciò che rende i nostri arancini
-                    irresistibili. Una consistenza croccante all'esterno,
-                    contrastata da una morbida esplosione di sapori all'interno
-                    - ogni arancino è un capolavoro di equilibrio gustativo.
-                  </p>
-                  <p className="font-recip py-3">
-                    👨‍👩‍👧 Per Tutta la Famiglia: Perfetti per un pasto veloce o da
-                    condividere in compagnia, i nostri arancini portano la gioia
-                    della tavola siciliana direttamente a casa tua. Condividi
-                    momenti di felicità e autenticità con la tua famiglia e gli
-                    amici.
-                  </p>
-                  <p className="font-recip py-3">
-                    🌞 Assapora il Sole della Sicilia: Lasciati trasportare
-                    dalla Sicilia con ogni morso. La combinazione di sapori
-                    ricchi e autentici è come una giornata di sole sulla costa
-                    mediterranea.
-                  </p>
+                  <div className="font-recip py-3">
+                    <p className="fs-1 my-font-home mb-3 text-center">🏝</p>
+                    <p className="fs-1 my-font-home mb-3 text-center">
+                      Senti la magia della Sicilia
+                    </p>{" "}
+                    in ogni morso dei nostri arancini artigianali, un vero
+                    simbolo della tradizione culinaria isolana.
+                  </div>
+                  <div className="font-recip py-3">
+                    <p className="fs-1 my-font-home mb-3 text-center">🍅</p>
+                    <p className="fs-1 my-font-home mb-3 text-center">
+                      Ingredienti Freschi e Autentici:
+                    </p>{" "}
+                    Preparati con riso selezionato, ripieni di ragù saporito o
+                    mozzarella cremosa, gli arancini catturano il gusto
+                    autentico della Sicilia. Gli aromi intensi dei nostri
+                    ingredienti freschi ti porteranno in un viaggio culinario
+                    unico.
+                  </div>
+                  <div className="font-recip py-3">
+                    <p className="fs-1 my-font-home mb-3 text-center">🔥</p>
+                    <p className="fs-1 my-font-home mb-3 text-center">
+                      Fritti alla Perfezione:
+                    </p>{" "}
+                    La croccantezza dorata della nostra panatura segreta è ciò
+                    che rende i nostri arancini irresistibili. Una consistenza
+                    croccante all'esterno, contrastata da una morbida esplosione
+                    di sapori all'interno - ogni arancino è un capolavoro di
+                    equilibrio gustativo.
+                  </div>
+                  <div className="font-recip py-3">
+                    <p className="fs-1 my-font-home mb-3 text-center">👨‍👩‍👧</p>
+                    <p className="fs-1 my-font-home mb-3 text-center">
+                      Per Tutta la Famiglia:
+                    </p>
+                    Perfetti per un pasto veloce o da condividere in compagnia,
+                    i nostri arancini portano la gioia della tavola siciliana
+                    direttamente a casa tua. Condividi momenti di felicità e
+                    autenticità con la tua famiglia e gli amici.
+                  </div>
+                  <div className="font-recip py-3">
+                    <p className="fs-1 my-font-home mb-3 text-center">🌞</p>
+                    <p className="fs-1 my-font-home mb-3 text-center">
+                      Assapora il Sole della Sicilia:
+                    </p>{" "}
+                    <br /> Lasciati trasportare dalla Sicilia con ogni morso. La
+                    combinazione di sapori ricchi e autentici è come una
+                    giornata di sole sulla costa mediterranea.
+                  </div>
                 </div>
               </Col>
             </Row>
@@ -453,7 +485,7 @@ const Home = () => {
           </AutoplaySlider>*/}
           <Carousel
             slide
-            className="d-flex align-items-center justify-content-center"
+            className="d-sm-none d-md-none d-flex align-items-center justify-content-center"
             data-aos="zoom-in"
             data-aos-easing="ease-in-sine"
             data-aos-duration="1000"
@@ -489,13 +521,13 @@ const Home = () => {
           </Carousel>
         </Container>
 
-        <Container fluid className="m-5 p-5">
+        <Container fluid className="m-sm-0 p-sm-0 m-md-3 p-md-3 m-lg-5 p-lg-5">
           <Footer />
         </Container>
 
         <Container
           fluid
-          className="mx-5 p-0 d-flex align-items-center justify-content-center"
+          className="mb-3 p-0 d-flex align-items-center justify-content-center"
         >
           <a
             href="#top"

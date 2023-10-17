@@ -7,7 +7,10 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <Container fluid className=" text-center text-md-left mt-5 pt-5 px-5">
+    <Container
+      fluid
+      className=" text-center text-md-left mt-5 pt-5 px-5 px-sm-0"
+    >
       <div>
         <Row className=" my-font-home d-lg-flex flex-xl-row  align-items-center justify-content-center flex-column">
           <Col md={6} className="mt-md-0 mt-3 pb-3 pe-xl-5">
@@ -91,16 +94,17 @@ const Footer = () => {
         </Row>
       </div>
 
-      <div className="footer-copyright text-center text-light py-2 my-font-home ">
+      <div className="text-center text-light py-2 my-font-home">
         <p className="mb-5">© 2023 Copyright: </p>
         <br />
         <a
           href="https://www.linkedin.com/in/gabriele-cuscin%C3%A0/"
-          className="my-font-home text-decoration-none text-decoration-none text-danger bg-warning rounded-pill border border-5 border-dark px-3 mx-3 mt-3"
+          className="my-font-home text-decoration-none text-decoration-none text-danger bg-warning rounded-pill border border-5 border-dark px-3 me-5 mt-3"
         >
           manarancino.it
         </a>
       </div>
+
     </Container>
   );
 };
